@@ -45,7 +45,7 @@ La arquitectura que he seguido para realizar este proyecto esta basada en la ori
 
 He utilizado las gemas de factory bot y faker para poder crear ejemplos de usuarios,coches y reservas. En total hay 42 test.
 
-Para ejecutar los test simplemente hay que descomentar las lineas de JSON de json_response(@booking), json_response(@users), json_response(@cars) estas líneas las encontramos en los controladores (booking_controller.rb, cars_controller.rb, users_controller.rb) de cada uno de las clases nombradas. Luego abrimos la consola y ejecutamos RSPEC.
+Para ejecutar los test simplemente hay que descomentar las líneas de JSON de json_response(@booking), json_response(@users), json_response(@cars) estas líneas las encontramos en los controladores (booking_controller.rb, cars_controller.rb, users_controller.rb) de cada uno de las clases nombradas. Luego abrimos la consola y ejecutamos RSPEC.
 
 #Modelos
 --------
@@ -64,6 +64,8 @@ migramos las bases de datos : rails db:migrate
 instalamos gemas : bundle install && bundle upadte
 
 rails s
+
+Recordar que si queremos probar los test hay que descomentar los json_response de los controladores. Hay 3 por cada controlador en los métodos index, create y show.
 
 Si nos da error al cargar boostraps ejecutamos: yarn add bootstrap@4.3.1 jquery popper.js
 
