@@ -67,7 +67,7 @@ rails s
 
 Si nos da error al cargar boostraps ejecutamos: yarn add bootstrap@4.3.1 jquery popper.js
 
-Recordar que si queremos probar los <strong>test<strong> hay que descomentar los json_response de los <strong>controladores.<strong> Hay 3 por cada controlador en los métodos index, create y show.
+Recordar que si queremos probar los <strong>test</strong> hay que descomentar los json_response de los <strong>controladores.</strong> Hay 3 por cada controlador en los métodos index, create y show.
 
 
 A disfrutar!
