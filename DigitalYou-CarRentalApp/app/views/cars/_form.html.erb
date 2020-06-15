@@ -1,0 +1,60 @@
+  
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="card">
+        <%= form_for :car do |form| %>
+          <p>
+            <%= form.label :name %><br>
+            <%= form.text_area :name %>
+          </p>
+          <p>
+            <%= form.label :image %><br>
+            <%= form.text_field :image %>
+          </p>
+          <p>
+            <%= form.label :type_options %><br>
+            <%= form.text_area :type_options %>
+          </p>
+          <p>
+            <%= form.label :price_hour %><br>
+            <%= form.number_field :price_hour %>
+          </p>
+          <p>
+            <%= form.label :doors %><br>
+            <%= form.number_field :doors %>
+          </p>
+          <p>
+            <%= form.label :gearshift %><br>
+            <%= form.text_area :gearshift %>
+          </p>
+          <p>
+            <%= form.label :AC %><br>
+            <%= form.text_area :AC %>
+          </p>
+          <p>
+            <%= form.label :luggage %><br>
+            <%= form.number_field :luggage %> kg
+          </p>
+          <p>
+            <%= form.label :pick_up_location %><br>
+            <%= form.text_area :pick_up_location %>
+          </p>
+          <p>
+            <div class="buttons-form">
+              <% if (request.path).include? 'edit'%>
+                <%= form.submit 'Edit Car',class:"btn btn-success w-50 my-3"%>
+              </div>
+            <% else %>
+              <%= form.submit 'Create Car',class:"btn btn-success w-50 my-3"%>
+            <%end%>
+            <%= link_to 'Go back all cars', cars_path,class:"btn btn-secondary w-50 my-3"%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
+

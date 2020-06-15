@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="card">
+        <p>Haz tu reserva</p>
+        <%= form_for :booking do |form| %>
+          <p>
+            <%= form.label :user_id %><br>
+            <%= form.collection_select :user_id, User.all, :id, :first_name %>
+          </p>
+          <p>
+            <%= form.label :car_id %><br>
+            <%= form.collection_select :car_id, Car.all, :id, :name %>
+          </p>
+          <p>
+            <%= form.label 'start_time', 'Start time' %>
+            <%= form.datetime_select :start_date, { minute_step: 15 } %>
+          </p>
+          <p>
+            <%= form.label 'end_time', 'end time' %>
+            <%= form.datetime_select :end_date, { minute_step: 15 } %>
+          </p>
+          <div class="buttons-form">
+            <%= form.submit 'Reserva Car',class:"btn btn-success w-50 my-3"%>
+            <%= link_to 'Go back all Bookings', bookings_path,class:"btn btn-secondary w-50 my-3"%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
+
+
+

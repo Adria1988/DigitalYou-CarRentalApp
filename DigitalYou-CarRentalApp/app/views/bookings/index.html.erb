@@ -1,0 +1,22 @@
+<h1 class="text-center my-5">All bookings</h1>
+<div class="container">
+  <div class="row">
+    <% @bookings.each do | booking | %>
+      <div class="col-4 mt-5">
+        <div class="card">
+          <h3 class="text-center my-3">Booking ID <%=booking.id%><h3>
+          <h3 class="text-center my-3">User ID <%=booking.user_id%><h3>
+          <p class="text-center my-3">Booking user: <%=label :first_name, @user = User.find(booking.user_id), @user.first_name %><p>
+          <h3>Car ID <%=booking.car_id%><h3>
+          <p class="text-center my-3">Booking car: <%=label :name, @car = Car.find(booking.car_id), @car.name %><p>
+          <div class="card-body text-center">
+            <div class="d-flex flex-column align-items-center">
+              <%= link_to 'Delete Booking', booking_path(booking), :method => :delete, data: {:confirm => "You sure?" },class:"btn btn-danger w-50 my-3" %></div>
+          </div>
+        </div>
+      </div>
+    <%end%>
+  </div>
+</div>
+
+              

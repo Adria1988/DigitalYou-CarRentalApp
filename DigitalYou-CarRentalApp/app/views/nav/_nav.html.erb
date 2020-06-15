@@ -1,0 +1,25 @@
+ <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <div class="container">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <%= link_to 'New User', new_user_path(@user),class:"btn btn-primary w-100"%>
+            </li>
+            <li class="nav-item active">
+                <%= link_to 'All Users','/users',class:"btn btn-primary w-100"%>
+            </li>
+            <li class="nav-item">
+                <%= link_to 'New Car', new_car_path(@car),class:"btn btn-primary w-100"%>
+            </li>  
+            <li class="nav-item">
+                <%= link_to 'All Cars','/cars',class:"btn btn-primary w-100"%>
+            </li>  
+            <li class="nav-item">
+                <%= link_to 'New Booking',new_booking_path(@booking),class:"btn btn-primary w-100"%>
+            </li>
+            <li class="nav-item">
+                <%= link_to 'All Bookings','/bookings',class:"btn btn-primary w-100"%>
+            </li>              
+        </ul>
+      </div>  
+ </nav>
+

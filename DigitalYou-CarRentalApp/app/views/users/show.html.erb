@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="card">
+        <h3 class="card-title">First Name</h3>
+        <p><%= @user.first_name %></p>
+        <h3 class="card-title">Last Name</h3>
+        <p><%= @user.last_name %></p>
+        <h3 class="card-title">Age:</h3>
+        <p><%= @user.age %></p>
+        <h3 class="card-title">City</h3>
+        <p><%= @user.city %></p>
+        <%= link_to 'Go back all users', users_path,class:"btn btn-secondary w-50 my-3"%>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

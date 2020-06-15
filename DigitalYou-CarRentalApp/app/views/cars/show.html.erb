@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="card">
+        <%#img = ['bcn.jpg','mad','val','nike','natura','berlos'].sample%>
+        <%#= image_tag img, {height: 200} %>
+        <h3 class="card-title">Car</h3>
+        <p><%= @car.name %></p>
+        <h3 class="card-title">Options type:</h3>
+        <p><%= @car.type_options %></p>
+        <h3 class="card-title">Price type:</h3>
+        <p><%= @car.type_options %></p>
+        <h3 class="card-title">Doors:</h3>
+        <p><%= @car.doors %></p>
+        <h3 class="card-title">Gearshift:</h3>
+        <p><%= @car.gearshift %></p>
+        <h3 class="card-title">AC:</h3>
+        <p><%= @car.AC %></p>
+        <h3 class="card-title">Pick up location:</h3>
+        <p><%= @car.pick_up_location %></p>
+        <h3 class="card-title">Luggage:</h3>
+        <p><%= @car.luggage %></p>
+        <%= link_to 'Go back all cars', cars_path,class:"btn btn-secondary w-50 my-3"%>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
