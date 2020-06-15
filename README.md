@@ -16,7 +16,9 @@ Desarollo de una API de alquiler de coches. En esta aplicación podremos =>
   <strong>3.Crear reserveras, crear una reserva activa por usuario</strong><br>
      Eliminar reserva <br>
 
-La página principal del proyecto es /bookings. Allí encontraremos una vista de todas las reservas que hay en la base de datos. En el header de la página tenemos un menú donde podremos crear y ver usuarios,coches y reservas. Si quisieramos editar o eliminar un coche o usuario simplemente tenemos que entrar en la pestaña de all cars o users. Para ver un coche o usuario específico 
+La página principal del proyecto es /bookings. Allí encontraremos una vista de todas las reservas que hay en la base de datos. En el header de la página tenemos un menú donde podremos crear y ver usuarios,coches y reservas. Si quisieramos editar o eliminar un coche o usuario simplemente tenemos que entrar en la pestaña de all cars o users. Para ejecutar la Api y verla en funcionamiento con el fron-end ejecutamos => rails s, con esto tendremos abierto el puerto de ruby en local y podemos acceder a 127.0.0.1:3000 para empezar a utilizar la aplicación(http://127.0.0.1:3000/bookings).
+
+En cuanto a las reservas un usuario solo puede tener una reserva activa y no se pueden hacer reservas con fechas anteriores al día actual.
 
 
 #Requisitos
@@ -36,8 +38,7 @@ Gemas utilizadas =>
 #Arquitectura
 ------------
 
-La arquitectura que he seguido para realizar este proyecto esta basada en la orientación a objetos. También he utilizado el patrón 
-Modelo-Vista-Controlador que separa los datos y la lógica de mi negocio.
+La arquitectura que he seguido para realizar este proyecto esta basada en la orientación a objetos. También he utilizado el patrón  Modelo-Vista-Controlador que separa los datos y la lógica de mi negocio.
 
 #Test
 -----
@@ -54,5 +55,7 @@ Para ejecutar los test simplemente hay que descomentar las lineas de JSON de jso
 #Clone
 ------
 
-git@github.com:Adria1988/DigitalYou-CarRentalApp.git
+Abrimos nuestro terminal y ejecutamos
+
+git clone git@github.com:Adria1988/DigitalYou-CarRentalApp.git
 
