@@ -25,14 +25,13 @@ La página principal del proyecto es /bookings. Allí encontraremos una vista de
 Ruby 2.5 o superior
 
 Gemas utilizadas =>
-   sqlite3
+   sqlite3,
    bootstrap,
    database_cleaner
    factory_bot_rails
    shoulda-matchers
    rspec-rails
    faker
-
 
 #Arquitectura
 ------------
@@ -51,4 +50,9 @@ Para ejecutar los test simplemente hay que descomentar las lineas de JSON de jso
 --------
 
 ![rental cars](https://user-images.githubusercontent.com/25666425/84652631-36147480-af0c-11ea-8c5d-9bbbfbf59947.PNG)
+
+#Clone
+------
+
+git@github.com:Adria1988/DigitalYou-CarRentalApp.git
 
