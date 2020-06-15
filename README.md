@@ -52,10 +52,21 @@ Para ejecutar los test simplemente hay que descomentar las lineas de JSON de jso
 
 ![rental cars](https://user-images.githubusercontent.com/25666425/84652631-36147480-af0c-11ea-8c5d-9bbbfbf59947.PNG)
 
-#Clone
-------
+#Proceso de instalación
+----------------------
 
 Abrimos nuestro terminal y ejecutamos
 
 git clone git@github.com:Adria1988/DigitalYou-CarRentalApp.git
+
+migramos las bases de datos : rails db:migrate
+
+instalamos gemas : bundle install && bundle upadte
+
+rails s
+
+Si nos da error al cargar boostraps ejecutamos: yarn add bootstrap@4.3.1 jquery popper.js
+
+
+A disfrutar!
 
